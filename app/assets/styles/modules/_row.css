@@ -3,11 +3,12 @@
   height: 1000px;
   background-color: azure;
   display: flex;
-
+  
   &__4 {
     width: 327px;
     height: 456px;
     background-color: $mainWhite;
+    display: block;
 
     &--black {
       background-color: $mainBlack;

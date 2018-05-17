@@ -8,4 +8,6 @@
 @import 'modules/_bars';
 @import 'modules/_banner';
 @import 'modules/_row'; 
+@import 'modules/_section-page'; 
+@import 'modules/_calendar';
 

@@ -1,0 +1,11 @@
+.calendar {
+  width: 76px;
+  height: 76px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 0 11px #ffffff;
+  border: 1px solid #f0f0f0;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 17px;
+  z-index: 4;
+}

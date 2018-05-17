@@ -1,0 +1,29 @@
+.section-page {
+  position: relative;
+  height: 111px;
+  width: 280px;
+  /* background-color: beige; */
+  margin-left: 27px;
+  border-bottom: solid 1px #cccccc;
+  &__img {
+    width: 83px;
+    height: 77px;
+    position: absolute;
+    left: 0;
+    top: 17px;
+    &--shadow {
+      width: 76px;
+      height: 80px;
+      position: absolute;
+      left: 6px;
+      top: 19px;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 17px;
+    left: 88px;
+    height: 77px;
+    width: 191px;
+  }
+}

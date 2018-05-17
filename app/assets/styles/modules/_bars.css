@@ -3,8 +3,15 @@
 
   &--vertical {
     position: absolute;
+    bottom: 9px;
     right: 51px;
     width: 2px;
     height: 39px;
+  }
+
+  &--horizontal {
+    width: 138px;
+    height: 1px;
+    margin-bottom: 6px;
   }
 }

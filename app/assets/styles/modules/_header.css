@@ -9,6 +9,7 @@
     height: 82px;
     background-image: url('../../assets/images/logo.png');
     position: absolute;
+    z-index: 2;
     top: 14px;
     left: 29px;
 
@@ -53,14 +54,15 @@
   &__bar {
     width: 980px;
     height: 74px;
-    /* opacity: 0.6; */
     background-color: $mainGrey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 
     ul {
-      padding-top: 40px;
+      margin: 0;
+      padding: 0;
+      width: 800px;
+      margin-left: 130px;
+      padding-top: 42px;
     }
   }
 }
