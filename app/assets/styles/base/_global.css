@@ -1,3 +1,16 @@
 html {
   background-color: grey;
+  
 }
+
+.container { 
+  max-width: 980px;
+  height: 1650px;
+  background-color: beige;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+

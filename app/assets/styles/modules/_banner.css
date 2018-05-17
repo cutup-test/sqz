@@ -1,0 +1,6 @@
+.banner {
+  max-width: 980px;
+  height: 442px;
+  background-image: url('../../assets/images/banner.png');
+  margin-top: 7px;
+}

@@ -1,0 +1,10 @@
+.bars {
+  background-color: #cccccc;
+
+  &--vertical {
+    position: absolute;
+    right: 51px;
+    width: 2px;
+    height: 39px;
+  }
+}
