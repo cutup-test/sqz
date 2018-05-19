@@ -3,33 +3,33 @@
   height: 1.4375em;
   background-image: url('../../assets/images/icons/magnif-glass.png');
   position: absolute;
-  top: 8px;
-  right: 17px;
-  bottom: 8px;
-  left: 278px;
+  top: 0.5em;
+  right: 1.0625em;
+  bottom: 0.5em;
+  left: 17.375em;
   &:hover {
     cursor: pointer;
   }
 }
 
 .icon--trolley {
-  width: 21px;
-  height: 21px;
+  width: 1.3125em;
+  height: 1.3125em;
   background-image: url('../../assets/images/icons/trolley.png');
   position: absolute;
-  right: 17px;
-  bottom: 17px;
+  right: 1.0625em;
+  bottom: 1.0625em;
   &:hover {
     cursor: pointer;
   }
 }
 
 .icon--arrow-red {
-  width: 6px;
-  height: 10px;
+  width: 0.375em;
+  height: 0.625em;
   background-image: url('../../assets/images/icons/arrow-red.png');
   position: absolute;
-  top: 2px;
+  top: 0.125em;
   &:hover {
     cursor: pointer;
   }

@@ -1,6 +1,6 @@
 @import "normalize.css";
 @import "base/_variables";
-/* @import "base/_mixins"; */
+@import "base/_mixins";
 @import 'base/_global'; 
 @import 'modules/_header';
 @import 'modules/_icons';
@@ -11,6 +11,6 @@
 @import 'modules/_section-page'; 
 @import 'modules/_calendar';
 @import 'modules/_circle-icon';
-@import 'modules/_img-border';
+/* @import 'modules/_img-border'; */
 @import 'modules/_footer';
 

@@ -1,24 +1,21 @@
 html {
   background-color: grey;
-  
 }
 
-.container { 
-  max-width: 980px;
-  height: 1650px;
+img {
+  max-width: 100%;
+  height: auto;
+} 
+
+.container {
+  max-width: 61.25em; 
+  height: 103.125em;
   background-color:#4c4d4f;
   margin: 0 auto;
 }
 
-.container__article {
-  max-width: 980px;
-  height: 1650px;
-  background-color:#4c4d4f;
-  margin: 0 auto;
-  diplay: block;
-}
+
 
 * {
   box-sizing: border-box;
 }
-

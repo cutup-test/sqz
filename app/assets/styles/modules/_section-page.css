@@ -1,62 +1,66 @@
 .section-page {
   position: relative;
-  height: 111px;
-  width: 280px;
+  height: 6.9375em;
+  min-width: 17.5em;
   /* background-color: beige; */
-  margin-left: 27px;
-  border-bottom: solid 1px #cccccc;
+  margin-left: 1.6875rem;
+  margin-right: 1.875rem;
+  border-bottom: solid 0.0625em #cccccc;
   &--smaller {
     height: auto;
-    width: 240px;
-    margin-bottom: 15px;
-    padding-bottom: 5.5px;
-    /* background-color: beige; */
+    min-width: 17.5em;
+    margin-bottom: 0.9375em;
+    padding-bottom: 0.34375em;
+    &--tweets {
+      padding-bottom: 0.15625em;
+      min-width: 17.5em;
+    }
   }
   &__img {
-    width: 83px;
-    height: 77px;
+    width: 5.1875em;
+    height: 4.8125em;
     position: absolute;
     left: 0;
-    top: 17px;
+    top: 1.0625em;
     &--shadow {
-      width: 76px;
-      height: 80px;
+      width: 4.75em;
+      height: 5em;
       position: absolute;
-      left: 6px;
-      top: 19px;
+      left: 0.375em;
+      top: 1.1875em;
     }
   }
   &__text {
     position: absolute;
-    top: 17px;
-    left: 92px;
-    height: 77px;
-    width: 191px;
+    top: 1.0625em;
+    left: 5.75em;
+    height: 4.8125em;
+    min-width: 11.9375em;
     &--shorter-left {
-      left: 88px;
+      left: 5.5em;
     }
   }
   &__square {
-    width: 183px;
-    height: 80px;
+    max-width: 11.4375em;
+    height: 5em;
     background-color: $mainRed;
     position: absolute;
-    bottom: 224px;
+    bottom: 14em;
     display: flex;
     align-items: center;
   }
   &__footer-links {
-    width: 330px;
-    height: 25px;
+    min-width: 20.625em;
+    height: 1.5625em;
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
+    margin-left: 1.875em;
   }
   &__footer-icons {
-    width: 225px;
-    height: 32px;
+    min-width: 14.0625em;
+    height: 2em;
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
+    margin-right: 3.125em;
   }
 }

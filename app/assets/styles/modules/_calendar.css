@@ -1,11 +1,11 @@
 .calendar {
-  width: 76px;
-  height: 76px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 0 11px #ffffff;
-  border: 1px solid #f0f0f0;
+  width: 4.75em;
+  height: 4.75em;
+  box-shadow: 0 0 0.3125em rgba(0, 0, 0, 0.12), inset 0 0 0 0.6875em #ffffff;
+  border: 0.0625em solid #f0f0f0;
   background-color: #ffffff;
   position: absolute;
   left: 0;
-  top: 17px;
+  top: 1.0625em;
   z-index: 4;
 }
