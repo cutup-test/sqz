@@ -1,0 +1,78 @@
+.circle-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: $mainRed;
+  background-image: url('../../assets/images/icons/arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+  margin-left: 9px;
+  margin-bottom: 6px;
+  &:hover {
+    cursor: pointer;
+  }
+  &--margin-bottom {
+    margin-bottom: 0px;
+  }
+  &__footer--tweet {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    margin: 0;
+    background-image: url('../../assets/images/icons/tweet.png');
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__footer--fb {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    margin: 0;
+    background-image: url('../../assets/images/icons/fb.png');
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__footer--yt {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    margin: 0;
+    background-image: url('../../assets/images/icons/yt.png');
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__footer--eyes {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    margin: 0;
+    background-image: url('../../assets/images/icons/eyes.png');
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__footer--mail {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    margin: 0;
+    background-image: url('../../assets/images/icons/mail.png');
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__footer--rss {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    margin: 0;
+    background-image: url('../../assets/images/icons/rss.png');
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,17 +1,22 @@
 .bars {
   background-color: #cccccc;
-
-  &--vertical {
+  &__vertical {
     position: absolute;
     bottom: 9px;
     right: 51px;
     width: 2px;
     height: 39px;
   }
-
-  &--horizontal {
+  &__horizontal {
     width: 138px;
     height: 1px;
     margin-bottom: 6px;
+    &--smaller {
+      background-color: #e9e9e9;
+      width: 60px;
+      height: 1px;
+      margin: 0 auto;
+      padding: 0;
+    }
   }
 }

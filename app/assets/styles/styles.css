@@ -10,4 +10,7 @@
 @import 'modules/_row'; 
 @import 'modules/_section-page'; 
 @import 'modules/_calendar';
+@import 'modules/_circle-icon';
+@import 'modules/_img-border';
+@import 'modules/_footer';
 

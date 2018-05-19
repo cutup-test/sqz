@@ -5,6 +5,13 @@
   /* background-color: beige; */
   margin-left: 27px;
   border-bottom: solid 1px #cccccc;
+  &--smaller {
+    height: auto;
+    width: 240px;
+    margin-bottom: 15px;
+    padding-bottom: 5.5px;
+    /* background-color: beige; */
+  }
   &__img {
     width: 83px;
     height: 77px;
@@ -22,8 +29,34 @@
   &__text {
     position: absolute;
     top: 17px;
-    left: 88px;
+    left: 92px;
     height: 77px;
     width: 191px;
+    &--shorter-left {
+      left: 88px;
+    }
+  }
+  &__square {
+    width: 183px;
+    height: 80px;
+    background-color: $mainRed;
+    position: absolute;
+    bottom: 224px;
+    display: flex;
+    align-items: center;
+  }
+  &__footer-links {
+    width: 330px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+  }
+  &__footer-icons {
+    width: 225px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
   }
 }

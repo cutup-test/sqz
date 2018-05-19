@@ -6,8 +6,16 @@ html {
 .container { 
   max-width: 980px;
   height: 1650px;
-  background-color: beige;
+  background-color:#4c4d4f;
   margin: 0 auto;
+}
+
+.container__article {
+  max-width: 980px;
+  height: 1650px;
+  background-color:#4c4d4f;
+  margin: 0 auto;
+  diplay: block;
 }
 
 * {

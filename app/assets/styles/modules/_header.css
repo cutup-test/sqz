@@ -1,9 +1,8 @@
 .header {
   max-width: 61.25em;
-  height: 7.18em;
+  height: 7.5em;
   background-color: #f4f4f4;
   position: relative;
-
   &__logo {
     width: 82px;
     height: 82px;
@@ -12,22 +11,18 @@
     z-index: 2;
     top: 14px;
     left: 29px;
-
     &:hover {
       cursor: pointer;
     }
   }
-  
-  
   &__search-bar {
     width: 317px;
     height: 39px;
-    background-color: $mainRed; 
+    background-color: $mainRed;
     position: relative;
     left: 100%;
     transform: translateX(-100%);
   }
-
   &__search-box--outside {
     position: relative;
     top: 4px;
@@ -40,23 +35,19 @@
     background-color: #940e1e;
     background-image: linear-gradient(to top, #9a0415 0%, #79010f 99%, #79010f 100%);
   }
-  
-
   &__search-box--inside {
     border-radius: 3px;
     width: 245px;
     height: 29px;
     box-shadow: -1px 1px 0 rgba(241, 123, 123, 0.83), inset 0 2px 4px rgba(0, 0, 0, 0.11);
     background-color: #940e1e;
-    background-image: linear-gradient(to top, rgba(150, 3, 20, 0.95) 0%, rgba(121, 1, 15, 0.95) 100%);    
+    background-image: linear-gradient(to top, rgba(150, 3, 20, 0.95) 0%, rgba(121, 1, 15, 0.95) 100%);
   }
-
   &__bar {
     width: 980px;
     height: 74px;
     background-color: $mainGrey;
     position: relative;
-
     ul {
       margin: 0;
       padding: 0;
@@ -66,5 +57,3 @@
     }
   }
 }
-
-

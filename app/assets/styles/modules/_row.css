@@ -1,17 +1,38 @@
-.row { 
+.row {
   max-width: 980px;
-  height: 1000px;
+  height: auto;
   background-color: azure;
   display: flex;
-  
+  &--b-border {
+    border-bottom: solid 2px #cccccc;
+  }
   &__4 {
     width: 327px;
     height: 456px;
     background-color: $mainWhite;
     display: block;
-
+    position: relative;
     &--black {
       background-color: $mainBlack;
+    }
+    &--warm {
+      background-color: #e4ded4;
+    }
+    &--grey {
+      background-color: #f5f3ef;
+    }
+  }
+  &__circ-arrow-link {
+    margin-left: 27px;
+    margin-top: 19px;
+    width: 280px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    &--center {
+      position: absolute;
+      left: 20px;
+      bottom: 14px;
     }
   }
 }

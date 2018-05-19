@@ -7,7 +7,6 @@
   right: 17px;
   bottom: 8px;
   left: 278px;
-
   &:hover {
     cursor: pointer;
   }
@@ -17,12 +16,21 @@
   width: 21px;
   height: 21px;
   background-image: url('../../assets/images/icons/trolley.png');
-  position: absolute; 
+  position: absolute;
   right: 17px;
   bottom: 17px;
-
   &:hover {
     cursor: pointer;
   }
 }
 
+.icon--arrow-red {
+  width: 6px;
+  height: 10px;
+  background-image: url('../../assets/images/icons/arrow-red.png');
+  position: absolute;
+  top: 2px;
+  &:hover {
+    cursor: pointer;
+  }
+}
