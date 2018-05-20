@@ -22,6 +22,9 @@
   &:hover {
     cursor: pointer;
   }
+  @mixin atSmaller {
+    top: 2.3em; 
+  }
 }
 
 .icon--arrow-red {

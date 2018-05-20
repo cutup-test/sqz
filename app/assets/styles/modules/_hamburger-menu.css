@@ -1,0 +1,31 @@
+.hamburger-menu {     
+      @mixin atSmaller {
+      position: absolute;
+      left: 50%;
+      top: 35px;
+      width: 45px;
+      height: 3px;
+      background-color: #656a77;  
+      &::before {
+      content: '';
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 20px;
+      width: 45px;
+      height: 3px;
+      background-color: #656a77;  
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 10px;
+        width: 45px;
+        height: 3px;
+        background-color: #656a77;  
+        }
+      }
+      
+}

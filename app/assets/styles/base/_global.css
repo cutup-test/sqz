@@ -5,16 +5,28 @@ html {
 img {
   max-width: 100%;
   height: auto;
-} 
-
-.container {
-  max-width: 61.25em; 
-  height: 103.125em;
-  background-color:#4c4d4f;
-  margin: 0 auto;
 }
 
+.container {
+  max-width: 61.25em;
+  height: 103.125em;
+  background-color: #4c4d4f;
+  margin: 0 auto;
+  @mixin atTiny {
+    width: 320px;
+  }
+}
 
+.container-search {
+  @mixin atSmaller {
+    display: inline-block;
+    transform: scale(.67) ;
+    transform-origin: 100% 0%;
+    
+    
+    
+  }
+}
 
 * {
   box-sizing: border-box;

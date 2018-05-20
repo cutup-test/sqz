@@ -111,7 +111,10 @@
     color: #231f20;
     font-size: 0.625em;
     font-weight: 400;
-    margin-left: 80%;
+    /* position: relative; */
+    text-align: right;
+
+    /* margin-left: 90%; */
     margin-top: 0;
     margin-bottom: 0.25rem;
   }

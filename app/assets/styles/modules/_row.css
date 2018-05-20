@@ -11,6 +11,9 @@
     display: block;
     position: relative;
     flex-grow: 1;
+    @mixin atSmall {
+      width: 70%;
+    }
     &--black {
       background-color: $mainBlack;
     }

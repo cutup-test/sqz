@@ -6,14 +6,24 @@
   margin-left: 1.6875rem;
   margin-right: 1.875rem;
   border-bottom: solid 0.0625em #cccccc;
+
+  @mixin atSmaller {
+    min-width: 60%;
+  }
   &--smaller {
     height: auto;
     min-width: 17.5em;
     margin-bottom: 0.9375em;
     padding-bottom: 0.34375em;
+    @mixin atSmaller {
+      min-width: 60%;
+    }
     &--tweets {
       padding-bottom: 0.15625em;
       min-width: 17.5em;
+      @mixin atSmaller {
+        min-width: 60%;
+      }
     }
   }
   &__img {
@@ -36,8 +46,12 @@
     left: 5.75em;
     height: 4.8125em;
     min-width: 11.9375em;
+    @mixin atSmaller {
+      min-width: 20%;
+    }
     &--shorter-left {
       left: 5.5em;
+      
     }
   }
   &__square {
@@ -62,6 +76,9 @@
       margin: 0;
       margin-left:3.438rem;
       margin-right:3.438rem;
+    }
+    @mixin atSmallest {
+      min-width: 16.625em;
     }
   }
   &__footer-icons {

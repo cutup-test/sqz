@@ -6,6 +6,9 @@
     right: 3.1875em;
     width: 0.125em;
     height: 2.4375em;
+    @mixin atSmaller {
+      height: 1.7em;
+    }
   }
   &__horizontal {
     width: 8.625em;
