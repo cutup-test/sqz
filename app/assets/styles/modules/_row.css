@@ -27,6 +27,14 @@
     background-color: $mainBlack;
     display: block;
     position: relative;
+
+    @mixin atMedium {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 55px;
+      
+    }
   }
   &__circ-arrow-link {
     margin-left: 1.6875em;
@@ -35,10 +43,19 @@
     height: 1.5625em;
     display: flex;
     align-items: center;
+    @mixin atMedium {
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
     &--center {
       position: absolute;
       left: 1.25em;
       bottom: 0.875em;
+      @mixin atMedium {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 }

@@ -48,6 +48,9 @@
     bottom: 14em;
     display: flex;
     align-items: center;
+    @mixin atMedium {
+      left: 0;
+    }
   }
   &__footer-links {
     min-width: 20.625em;
@@ -55,6 +58,11 @@
     display: flex;
     justify-content: space-between;
     margin-left: 1.875em;
+    @mixin atSmall {
+      margin: 0;
+      margin-left:3.438rem;
+      margin-right:3.438rem;
+    }
   }
   &__footer-icons {
     min-width: 14.0625em;
@@ -62,5 +70,8 @@
     display: flex;
     justify-content: space-between;
     margin-right: 3.125em;
+    @mixin atSmall {
+      margin: 0;
+    }
   }
 }
