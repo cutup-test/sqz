@@ -1,8 +1,9 @@
 var path = require('path');
+var webpack = require('webpack'); 
 
 module.exports = {
   mode: 'none',
-  entry: './app/assets/index.js',
+  entry: './app/assets/scripts/App.js',
   output: {
     path: path.resolve(__dirname, './app/temp/scripts'),
     filename: 'bundle.js'
@@ -15,7 +16,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['react', 'es2015', 'stage-1']
+            presets: ['es2015']
           }
         }
       }

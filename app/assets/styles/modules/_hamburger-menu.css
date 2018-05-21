@@ -1,12 +1,12 @@
-.hamburger-menu {     
-      @mixin atSmaller {
-      position: absolute;
-      left: 50%;
-      top: 35px;
-      width: 45px;
-      height: 3px;
-      background-color: #656a77;  
-      &::before {
+.hamburger-menu {
+  @mixin atSmaller {
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    width: 45px;
+    height: 3px;
+    background-color: #656a77;
+    &::before {
       content: '';
       position: absolute;
       transform: translateX(-50%);
@@ -14,18 +14,57 @@
       top: 20px;
       width: 45px;
       height: 3px;
-      background-color: #656a77;  
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        transform: translateX(-50%);
-        left: 50%;
-        top: 10px;
-        width: 45px;
-        height: 3px;
-        background-color: #656a77;  
-        }
-      }
-      
+      background-color: #656a77;
+      transition: all 0s;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 10px;
+      width: 45px;
+      height: 3px;
+      background-color: #656a77;
+      transition: all 0s;
+    }
+  }
+}
+
+.change-to-cross {
+  @mixin atSmaller {
+    z-index: 200;
+    position: absolute;
+    left: 70%;
+    top: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: #656a77;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 20px;
+      width: 29px;
+      height: 4px;
+      background-color: #656a77;
+      transform: rotate(-45deg);
+      transform-origin: 28% 20%;
+      transition: all .7s;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: 50%;
+      top: 10px;
+      width: 29px;
+      height: 4px;
+      background-color: #656a77;
+      transform: rotate(45deg);
+      transform-origin: 28% 100%;
+      transition: all .7s;
+    }
+  }
+
 }

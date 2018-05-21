@@ -1,0 +1,9 @@
+.toggle-display {
+  @mixin atSmaller {
+    opacity: 1;
+    display: block;
+    transform: translate(-50%, 0%) scale(1);
+    transition: all .6s;
+    pointer-events: auto;
+  }
+}

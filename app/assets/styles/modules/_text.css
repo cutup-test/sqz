@@ -175,13 +175,24 @@
     font-size: 1em;
     font-weight: 400;
     list-style-type: none;
+    display: block;
+    padding-top: 8px;
+    height: 36px;
+    
     @mixin atMedium {
       padding-left: 35px;
-      padding-bottom: 6px;
+      padding-bottom: 9px;
+      
+    }
+
+    @mixin atSmaller {
+      padding-left: 0;
+      background-color: rgba($mainWhite, 0.9);
     }
     &:hover {
       color: #7f7f7f;
       cursor: pointer;
     }
+    
   }
 }
