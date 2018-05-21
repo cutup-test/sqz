@@ -91,4 +91,14 @@
       margin: 0;
     }
   }
+
+  &__pagination {
+    width: 119px;
+    height: 12px;
+    position: absolute;
+    bottom: 19px;
+    right: 27px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

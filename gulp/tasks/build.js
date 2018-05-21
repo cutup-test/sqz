@@ -16,7 +16,7 @@ gulp.task('build', ['copyImg'], function() {
 });
 
 gulp.task('copyImg', ['delDocs'], function() {
-  return gulp.src('./app/assets/images/*')
+  return gulp.src('./app/assets/images/**')
          .pipe(gulp.dest('./docs/assets/images/'))
 })
 
