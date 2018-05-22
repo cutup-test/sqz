@@ -6,37 +6,47 @@ class Slideshow {
     this.slideChange();
   }
 
-  clickEvent() {
+  paginationArray() {
     let paginationAray = Array.from(this.pagination);
-    paginationAray.map((paginationElement) => paginationElement.addEventListener('click', this.changePaginationColor.bind(this)))
+    return paginationAray;
+  }
+
+  removeRedFromPagination() {
+    this.paginationArray().map((paginationElement) => paginationElement.classList.remove('pagination--red'));
+  }
+
+  clickEvent() {
+    this.paginationArray().map((paginationElement) => paginationElement.addEventListener('click', this.changePaginationColor.bind(this)))
   }
 
   changePaginationColor(clickedPaginationElement) {
-    let paginationAray = Array.from(this.pagination);
-    paginationAray.map((paginationElement) => paginationElement.classList.remove('pagination--red'));
+    this.removeRedFromPagination();
     clickedPaginationElement.target.classList.add('pagination--red');
-    this.slideChange();
   }
 
-  slideChange(clickedSlide=1) {
-    
+  slideChange(clickedSlide = 1) {
+    this.paginationArray()[clickedSlide - 1].classList.add('pagination--red');
+    let that = this;
     let slides = document.getElementsByClassName('banner__img')[0];
     let currentSlide = clickedSlide;
     let nextSlide = () => {
       if (currentSlide === 6) currentSlide = 1;
       slides.src = `assets/images/slide${currentSlide}.jpg`;
+      this.removeRedFromPagination();
+      this.paginationArray()[currentSlide - 1].classList.add('pagination--red');
       currentSlide++;
     }
-    let paginationAray = Array.from(this.pagination);
-    paginationAray.map((paginationElement) => paginationElement.addEventListener('click', stop.bind(this) ));
-    function stop() {
-      clearInterval(slideInterval);
-      slides.src = `assets/images/slide${3}.jpg`; 
-      this.slideChange(4);
-      
-    }
-    let slideInterval = setInterval(nextSlide, 4000);
+    this.paginationArray().map((paginationElement) => paginationElement.addEventListener('click', function () {
+      stopInterval(this);
 
+    }));
+    function stopInterval(eventElement) {
+      let slideNumber = eventElement.getAttribute("data-slide-number");
+      clearInterval(slideInterval);
+      slides.src = `assets/images/slide${slideNumber}.jpg`;
+      that.slideChange(slideNumber);
+    }
+    let slideInterval = setInterval(nextSlide, 2000);
   }
-} 
+}
 export default Slideshow;

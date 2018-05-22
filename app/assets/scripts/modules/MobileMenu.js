@@ -10,7 +10,6 @@ class MobileMenu {
   }
 
   showMenu() {
-    console.log('show menu');
     this.menuItems.classList.toggle('toggle-display');
     this.hamburgerMenu.classList.toggle('change-to-cross');
   }

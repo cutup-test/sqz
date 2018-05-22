@@ -33,7 +33,7 @@
 
 .change-to-cross {
   @mixin atSmaller {
-    z-index: 200;
+    z-index: 201;
     position: absolute;
     left: 70%;
     top: 0px;
