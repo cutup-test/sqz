@@ -27,7 +27,6 @@
       cursor: pointer;
     }
     &--red {
-      background-color: $mainRed;
       border-color: $mainRed;
     }  
   }

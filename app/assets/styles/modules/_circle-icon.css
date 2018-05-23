@@ -12,8 +12,37 @@
   &:hover {
     cursor: pointer;
   }
-
-  
+  &--white-right {
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 171px;
+    right: 14px;
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    background-color: rgba(#fdfafa, .4);
+    background-image: url('../../assets/images/icons/arrow-big.png');
+    z-index: 300;
+    &:hover {
+      cursor: pointer;
+    }
+    &:before {
+      background-repeat: no-repeat;
+      background-position: center;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 900px;
+      width: 52px;
+      height: 52px;
+      border-radius: 52px;
+      background-image: url('../../assets/images/icons/arrow-big.png');
+      transform: scaleX(-1);
+      background-color: rgba(#fdfafa, .4);
+      z-index: 301;
+    }
+  }
   &--margin-bottom {
     margin-bottom: 0px;
   }
