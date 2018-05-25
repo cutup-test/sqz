@@ -108,5 +108,5 @@ class Slideshow {
     }
   }
 }
-
+ 
 export default Slideshow;
