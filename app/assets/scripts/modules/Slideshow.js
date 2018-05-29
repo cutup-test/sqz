@@ -27,7 +27,6 @@ class Slideshow {
       paginationElement.target.classList.add('pagination--red');
       stopInterval(this);
     });
-
     this.arrowButton.onclick = (event) => {
 
       let whichArrowClicked = (event.clientX / window.innerWidth) * 100;
@@ -57,19 +56,20 @@ class Slideshow {
         let buttonStatePause = that.pauseButton.getAttribute('data-button-state');
         if (buttonStateArrow === 'off' && currentSlide != 1) currentSlide--;
         that.removeRedFromPagination();
-        if (currentSlide >= 5 && (buttonStateArrow === 'on' || buttonStatePause === 'on')) that.paginationArray()[0].classList.add('pagination--red');
-        else if (buttonStateArrow === 'off' && currentSlide >= 5) {
-          that.paginationArray()[0].classList.add('pagination--red');
-        } else that.paginationArray()[currentSlide].classList.add('pagination--red');
+        if (buttonStateArrow === 'off' && currentSlide >= 5) {
+          that.paginationArray()[3].classList.add('pagination--red');
+        } else {
+          if (currentSlide === 1) that.paginationArray()[4].classList.add('pagination--red');
+          else that.paginationArray()[currentSlide - 2].classList.add('pagination--red');
+        }
         that.pauseButton.setAttribute('data-button-state', 'on');
         if (buttonStatePause === 'off') that.pauseButton.classList.add('pagination__pause--red');
         that.pauseButton.setAttribute('data-arrow-button-state', 'on');
         clearInterval(slideInterval);
-        if (currentSlide < 1 || currentSlide >= 5) currentSlide = 0;
+        if (currentSlide === 1) currentSlide = 6;
         currentSlide--;
         slides.src = `assets/images/slide${currentSlide}.jpg`;
       }
-
     }
 
     this.pauseButton.onclick = function () {
@@ -108,5 +108,5 @@ class Slideshow {
     }
   }
 }
- 
+
 export default Slideshow;

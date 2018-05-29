@@ -26,7 +26,7 @@
     z-index: 300;
     &:hover {
       cursor: pointer;
-    }
+    } 
     &:before {
       background-repeat: no-repeat;
       background-position: center;
