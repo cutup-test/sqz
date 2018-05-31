@@ -5,24 +5,28 @@
   margin: 0 auto;
   position: relative;
   text-align: right;
+
   @mixin atSmaller {
     height: 4.3em;
     text-align: center;
   }
+
   &__logo {
     width: 5.125em;
     height: 5.125em;
-    background-image: url('../../assets/images/logo.png');
+    background-image: url("../../assets/images/logo.png");
     position: absolute;
     z-index: 2;
     top: 0.875em;
     left: 1.8125em;
+
     @mixin atSmaller {
-      transform: scale(.8);
+      transform: scale(0.8);
       transform-origin: 0 0;
       top: 0;
       left: 0;
     }
+
     &:hover {
       cursor: pointer;
     }
@@ -34,8 +38,11 @@
     position: relative;
     left: 100%;
     transform: translateX(-100%);
-    @mixin atSmaller {}
+
+    @mixin atSmaller {
+    }
   }
+
   &__search-box--outside {
     position: relative;
     top: 0.25em;
@@ -46,22 +53,35 @@
     height: 1.8125em;
     box-shadow: inset 0 0.1875em 0 rgba(214, 64, 80, 0.75);
     background-color: #940e1e;
-    background-image: linear-gradient(to top, #9a0415 0%, #79010f 99%, #79010f 100%);
+    background-image: linear-gradient(
+      to top,
+      #9a0415 0%,
+      #79010f 99%,
+      #79010f 100%
+    );
   }
+
   &__search-box--inside {
     text-align: left;
     border-radius: 0.1875em;
     width: 15.3125em;
     height: 1.8125em;
-    box-shadow: -0.0625em 0.0625em 0 rgba(241, 123, 123, 0.83), inset 0 0.125em 0.25em rgba(0, 0, 0, 0.11);
+    box-shadow: -0.0625em 0.0625em 0 rgba(241, 123, 123, 0.83),
+      inset 0 0.125em 0.25em rgba(0, 0, 0, 0.11);
     background-color: #940e1e;
-    background-image: linear-gradient(to top, rgba(150, 3, 20, 0.95) 0%, rgba(121, 1, 15, 0.95) 100%);
+    background-image: linear-gradient(
+      to top,
+      rgba(150, 3, 20, 0.95) 0%,
+      rgba(121, 1, 15, 0.95) 100%
+    );
   }
+
   &__bar {
     max-width: 61.25em;
     height: 6.625em;
     background-color: $mainGrey;
     position: relative;
+
     @mixin atSmaller {
       position: static;
       display: block;
@@ -79,7 +99,7 @@
     justify-content: space-between;
     position: absolute;
     z-index: 200;
-    
+
     @mixin atMedium {
       top: 50%;
       left: 50%;
@@ -87,6 +107,7 @@
       flex-wrap: wrap;
       width: 60%;
     }
+    
     @mixin atSmaller {
       opacity: 0;
       pointer-events: none;

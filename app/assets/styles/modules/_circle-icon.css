@@ -3,105 +3,137 @@
   width: 1.5625em;
   height: 1.5625em;
   background-color: $mainRed;
-  background-image: url('../../assets/images/icons/arrow.png');
+  background-image: url("../../assets/images/icons/arrow.png");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 1.5625em;
   margin-left: 0.5625em;
   margin-bottom: 0.375em;
+
   &:hover {
     cursor: pointer;
   }
+
   &--white-right {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: 171px;
-    right: 14px;
+    top: 38.687783%;
+    right: 1.4285714%;
     width: 52px;
     height: 52px;
     border-radius: 52px;
-    background-color: rgba(#fdfafa, .4);
-    background-image: url('../../assets/images/icons/arrow-big.png');
+    background-color: rgba(#fdfafa, 0.4);
+    background-image: url("../../assets/images/icons/arrow-big.png");
     z-index: 300;
+
+    @mixin atSmallerSmall {
+      top: 28%;
+      width: 42px;
+      height: 42px;
+    }
+
     &:hover {
       cursor: pointer;
-    } 
-    &:before {
-      background-repeat: no-repeat;
-      background-position: center;
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 900px;
-      width: 52px;
-      height: 52px;
-      border-radius: 52px;
-      background-image: url('../../assets/images/icons/arrow-big.png');
-      transform: scaleX(-1);
-      background-color: rgba(#fdfafa, .4);
-      z-index: 301;
     }
   }
+
+  &--white-left {
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 38.687783%;
+    left: 1.4285714%;
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    background-image: url("../../assets/images/icons/arrow-big.png");
+    transform: scaleX(-1);
+    background-color: rgba(#fdfafa, 0.4);
+    z-index: 303;
+
+    @mixin atSmallerSmall {
+      top: 28%;
+      width: 42px;
+      height: 42px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   &--margin-bottom {
     margin-bottom: 0px;
   }
+
   &__footer--tweet {
     width: 2em;
     height: 2em;
     border-radius: 2em;
     margin: 0;
-    background-image: url('../../assets/images/icons/tweet.png');
+    background-image: url("../../assets/images/icons/tweet.png");
+
     &:hover {
       cursor: pointer;
     }
   }
+
   &__footer--fb {
     width: 2em;
     height: 2em;
     border-radius: 2em;
     margin: 0;
-    background-image: url('../../assets/images/icons/fb.png');
+    background-image: url("../../assets/images/icons/fb.png");
+
     &:hover {
       cursor: pointer;
     }
   }
+
   &__footer--yt {
     width: 2em;
     height: 2em;
     border-radius: 2em;
     margin: 0;
-    background-image: url('../../assets/images/icons/yt.png');
+    background-image: url("../../assets/images/icons/yt.png");
+
     &:hover {
       cursor: pointer;
     }
   }
+
   &__footer--eyes {
     width: 2em;
     height: 2em;
     border-radius: 2em;
     margin: 0;
-    background-image: url('../../assets/images/icons/eyes.png');
+    background-image: url("../../assets/images/icons/eyes.png");
+
     &:hover {
       cursor: pointer;
     }
   }
+
   &__footer--mail {
     width: 2em;
     height: 2em;
     border-radius: 2em;
     margin: 0;
-    background-image: url('../../assets/images/icons/mail.png');
+    background-image: url("../../assets/images/icons/mail.png");
+
     &:hover {
       cursor: pointer;
     }
   }
+
   &__footer--rss {
     width: 2em;
     height: 2em;
     border-radius: 2em;
     margin: 0;
-    background-image: url('../../assets/images/icons/rss.png');
+    background-image: url("../../assets/images/icons/rss.png");
+
     &:hover {
       cursor: pointer;
     }

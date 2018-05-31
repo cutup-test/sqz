@@ -15,5 +15,10 @@
     opacity: 0.95;
     z-index: 5;
     bottom: 0;
+
+    @mixin atMedium {
+      position: static;
+      height: 27%;
+    }
   }
 }

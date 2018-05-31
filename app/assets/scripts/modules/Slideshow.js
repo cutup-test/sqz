@@ -3,9 +3,12 @@ class Slideshow {
     this.banner = document.getElementsByClassName('banner_img')[0];
     this.pagination = document.getElementsByClassName('pagination');
     this.pauseButton = document.getElementsByClassName('pagination__pause')[0];
-    this.arrowButton = document.getElementsByClassName('circle-icon--white-right')[0];
+    this.arrowButtonRight = document.getElementsByClassName('circle-icon--white-right')[0];
+    this.arrowButtonLeft = document.getElementsByClassName('circle-icon--white-left')[0];
     this.slideChange();
+    
   }
+
   paginationArray() {
     let paginationArray = Array.from(this.pagination);
     return paginationArray;
@@ -13,6 +16,7 @@ class Slideshow {
   removeRedFromPagination() {
     this.paginationArray().map((paginationElement) => paginationElement.classList.remove('pagination--red'));
   }
+
   slideChange(clickedSlide = 1) {
     this.removeRedFromPagination();
     if (clickedSlide === 0) clickedSlide++;
@@ -27,13 +31,8 @@ class Slideshow {
       paginationElement.target.classList.add('pagination--red');
       stopInterval(this);
     });
-    this.arrowButton.onclick = (event) => {
 
-      let whichArrowClicked = (event.clientX / window.innerWidth) * 100;
-      if (whichArrowClicked < 50) leftArrowClicked();
-      else rightArrowClicked();
-
-      function rightArrowClicked() {
+    this.arrowButtonRight.onclick = (event) => {
         let buttonStateArrow = that.pauseButton.getAttribute('data-arrow-button-state');
         let buttonStatePause = that.pauseButton.getAttribute('data-button-state');
         if (buttonStateArrow === 'off' && currentSlide != 1) currentSlide--;
@@ -48,16 +47,16 @@ class Slideshow {
         clearInterval(slideInterval);
         if (currentSlide < 1 || currentSlide >= 5) currentSlide = 0;
         currentSlide++;
-        slides.src = `assets/images/slide${currentSlide}.jpg`;
-      }
+        slides.src = `assets/images/slide${currentSlide}.jpg`; 
+    }
 
-      function leftArrowClicked() {
+    this.arrowButtonLeft.onclick = (event) => {
         let buttonStateArrow = that.pauseButton.getAttribute('data-arrow-button-state');
         let buttonStatePause = that.pauseButton.getAttribute('data-button-state');
         if (buttonStateArrow === 'off' && currentSlide != 1) currentSlide--;
         that.removeRedFromPagination();
         if (buttonStateArrow === 'off' && currentSlide >= 5) {
-          that.paginationArray()[3].classList.add('pagination--red');
+          that.paginationArray()[4].classList.add('pagination--red');
         } else {
           if (currentSlide === 1) that.paginationArray()[4].classList.add('pagination--red');
           else that.paginationArray()[currentSlide - 2].classList.add('pagination--red');
@@ -69,7 +68,6 @@ class Slideshow {
         if (currentSlide === 1) currentSlide = 6;
         currentSlide--;
         slides.src = `assets/images/slide${currentSlide}.jpg`;
-      }
     }
 
     this.pauseButton.onclick = function () {
@@ -90,7 +88,7 @@ class Slideshow {
         that.pauseButton.classList.add('pagination__pause--red');
         clearInterval(slideInterval);
       }
-    };
+    }
 
     function nextSlide() {
       if (currentSlide < 1 || currentSlide >= 6) currentSlide = 1;

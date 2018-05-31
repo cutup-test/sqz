@@ -51,7 +51,6 @@
     }
     &--shorter-left {
       left: 5.5em;
-      
     }
   }
   &__square {
@@ -74,8 +73,8 @@
     margin-left: 1.875em;
     @mixin atSmall {
       margin: 0;
-      margin-left:3.438rem;
-      margin-right:3.438rem;
+      margin-left: 3.438rem;
+      margin-right: 3.438rem;
     }
     @mixin atSmallest {
       min-width: 16.625em;
@@ -100,5 +99,9 @@
     right: 27px;
     display: flex;
     justify-content: space-between;
+
+    @mixin atMedium {
+      display: none;
+    }
   }
 }
