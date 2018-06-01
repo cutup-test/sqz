@@ -7,11 +7,12 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 1.5625em;
-  margin-left: 0.5625em;
+  margin-left: 0.5625em; 
   margin-bottom: 0.375em;
 
   &:hover {
-    cursor: pointer;
+    cursor: pointer; 
+    background-color: #D40F26;
   }
 
   &--white-right {
@@ -26,6 +27,10 @@
     background-color: rgba(#fdfafa, 0.4);
     background-image: url("../../assets/images/icons/arrow-big.png");
     z-index: 300;
+
+    &:hover {
+      background-color: rgba(#fdfafa, 0.6);
+    }
 
     @mixin atSmallerSmall {
       top: 28%;
@@ -51,6 +56,9 @@
     transform: scaleX(-1);
     background-color: rgba(#fdfafa, 0.4);
     z-index: 303;
+    &:hover {
+      background-color: rgba(#fdfafa, 0.6);
+    }
 
     @mixin atSmallerSmall {
       top: 28%;
